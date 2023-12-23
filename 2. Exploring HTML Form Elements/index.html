@@ -7,26 +7,57 @@
 
 <body>
     <h1>HTML Form Example</h1>
-    <!-- TODO 2.1: Add the container for the form. It should POST to "/submit_form"  -->
-    
-        <!-- TODO 2.2: Add a first name text field -->
+    <!-- DONE 2.1: Add the container for the form. It should POST to "/submit_form"  -->
+    <form action="/submit_form" method="post">
+    <!-- DONE 2.2: Add a first name text field -->
+    <label for="first name">First Name:</label></br>
+    <input type="text" id="first name" name="first_name" /></br>
 
-        <!-- TODO 2.3: Add a last name text field. The field must be required. -->
+    <!-- DONE 2.3: Add a last name text field. The field must be required. -->
+    <label for="last name">Last Name:</label></br>
+    <input type="text" id="last name" name="last_name" required></br>
 
-        <!-- TODO 2.4: Add an email text field. The field must be read only. -->
+    <!-- DONE 2.4: Add an email text field. The field must be read only. -->
+    <label for="email">Email:</label></br>
+    <input type="email" id="email" name="email" required readonly></br>
 
-        <!-- TODO 2.5: Add an address text field. The field must be disabled. -->
+    <!-- DONE 2.5: Add an address text field. The field must be disabled. -->
+    <label for="address">Address:</label></br>
+    <input type="text" id="address" name="address" disabled></br>
 
-        <!-- TODO 2.6: Add a year level dropdown. The inital selected value must be "Select an option", but it must not be a valid selection. -->
+    <!-- DONE 2.6: Add a year level dropdown. The inital selected value must be "Select an option", but it must not be a valid selection. -->
+    <label for="year level">Year Level:</label></br>
+    <select name="year level" id="year level" name="year level" required>
+        <option value="" selected disabled>Select an Option</option>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option>
+    </select></br>
 
-        <!-- TODO 2.7: Add radio buttons that ask which learning mode the user prefers -->
+    <!-- DONE 2.7: Add radio buttons that ask which learning mode the user prefers -->
+    <label for="learning mode">Which learning mode do you prefer:</label></br>
+    <input type="radio" name="learning mode" id="online">
+    <label for="online">Online</label></br>
+    <input type="radio" name="learning mode" id="ftf">
+    <label for="ftf">Face to Face</label></br>
 
-        <!-- TODO 2.8: Add check boxes that ask which subjects the user has taken -->
+    <!-- DONE 2.8: Add check boxes that ask which subjects the user has taken -->
+    <label for="subjects">Which subjects has the user taken:</label></br>
+    <input type="checkbox" id="math" name="math" value="yes"/>
+    <label for="math">Math</label></br>
+    <input type="checkbox" id="English" name="English" value="yes"/>
+    <label for="math">English</label></br>
+    <input type="checkbox" id="Science" name="Science" value="yes"/>
+    <label for="math">Science</label></br>
        
-        <!-- TODO 2.9: Add a text area that asks the user if they would prefer to be a cactus or a shark -->
+    <!-- DONE 2.9: Add a text area that asks the user if they would prefer to be a cactus or a shark -->
+    <label for="preference">Would you prefer to be a Shark or a Cactus?:</label>
+    <textarea id="preference" name="preference" rows="4" cols="50"></textarea></br>
 
-        <!-- TODO 2.10: Add a submit button -->
-
+    <!-- DONE 2.10: Add a submit button -->
+    <button type="submit">Submit</button>
+</form>
 </body>
 
 </html>
