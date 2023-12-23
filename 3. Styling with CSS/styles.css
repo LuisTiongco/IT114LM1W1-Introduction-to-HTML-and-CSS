@@ -1,30 +1,46 @@
 .center-text {
-    /* TODO 3.1: Align the text center or right */
+    /* DONE 3.1: Align the text center or right */
+    text-align: center;
 
-    /* TODO 3.2: Change the color of the font to your favorite color */
+    /* DONE 3.2: Change the color of the font to your favorite color */
+    color:blueviolet;
     
-    /* TODO 3.3: Make the font thicker */
+    /* DONE 3.3: Make the font thicker */
+    font-weight: bold;
     
-    /* TODO 3.4: Increase the font size*/
+    /* DONE 3.4: Increase the font size*/
+    font-size: 50px;
+
+    /* DONE 3.5: Add an underline to the text */
+    text-decoration: underline;
     
-    /* TODO 3.5: Add an underline to the text */
     
 }
 
 .paragraph-style {
-    /* TODO 3.6: Make the font italic */
+    /* DONE 3.6: Make the font italic */
+    font-style: italic;
     
-    /* TODO 3.7: Change the font to  */
+    /* DONE 3.7: Change the font to  */
+    font-family: 'Courier New', Courier, monospace;
     
-    /* TODO 3.8: Increase the space between lines */
+    /* DONE 3.8: Increase the space between lines */
+    line-height: 3;
 
 }
 
 .box {
-    /* TODO 3.9: Set the width and height of the div. Try out the different units of HTML. px, em, %, in, rem  */
+    /* DONE 3.9: Set the width and height of the div. Try out the different units of HTML. px, em, %, in, rem  */
+    height: 300px;
     
-    /* TODO 3.10: Change the background color fo the div. Can you find a way to make the background color 50% transparent? */
+    /* DONE 3.10: Change the background color fo the div. Can you find a way to make the background color 50% transparent? */
+    background-color:rgba(255, 127, 80, 0.5);
     
-    /* TODO 3.11: Play around with the margin, padding and border. Can you find a way to set the size of specific sides? */
+    /* DONE 3.11: Play around with the margin, padding and border. Can you find a way to set the size of specific sides? */
+    margin: 30px 30px;
+    padding: 10px 20px 30px 40px;
+    border: 5px dashed blue;
+    
+
 
 }
